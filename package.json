@@ -29,6 +29,7 @@
 		"extends": "stylelint-config-xo"
 	},
 	"dependencies": {
+		"@types/webextension-polyfill": "^0.9.0",
 		"webext-options-sync": "^2.0.1",
 		"webextension-polyfill": "^0.7.0"
 	},

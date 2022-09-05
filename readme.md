@@ -16,3 +16,9 @@ The extension exposes a button to copy the current page's title & link to the cl
 
 - Copies it in html format (for rich-text editors)
 - Copies it in markdown format (for plain-text editors)
+
+## Development
+
+- `npm run watch` to watch for changes and build the extension.
+- `npm i -g web-ext` to install [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/).
+- `web-ext run -f firefoxdeveloperedition` to run the extension in Firefox Developer Edition.
