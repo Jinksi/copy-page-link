@@ -29,7 +29,8 @@
 	},
 	"background": {
 		"scripts": [
-			"background.ts"
+			"background.ts",
+			"copyLink.ts"
 		],
 		"persistent": false
 	}
