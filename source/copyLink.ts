@@ -1,3 +1,4 @@
+import { CopyArgs } from './types'
 import { formatGithubLink } from './formatters/github'
 
 async function copyLink() {

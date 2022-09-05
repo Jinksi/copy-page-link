@@ -1,4 +1,4 @@
-interface CopyArgs {
+export interface CopyArgs {
 	text: string
 	html: string
 }
