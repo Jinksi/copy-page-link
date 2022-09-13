@@ -1,6 +1,6 @@
 {
 	"name": "Copy Pretty Page Link",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Copies the current page's link to the clipboard, formatted for use as a HTML or Markdown link.",
 	"homepage_url": "https://github.com/jinksi/copy-page-link",
 	"manifest_version": 2,
