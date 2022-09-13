@@ -1,6 +1,6 @@
 import { FormatterArgs } from '../types'
 
-type GithubStatus = 'Open' | 'Closed' | 'Merged' | null
+type GithubStatus = 'Open' | 'Closed' | 'Merged' | 'Draft' | null
 
 function getStatus({ document }): GithubStatus {
 	const status = document.querySelector('.gh-header-meta .State')
@@ -8,6 +8,7 @@ function getStatus({ document }): GithubStatus {
 	if (statusText === 'Open') return 'Open'
 	if (statusText === 'Closed') return 'Closed'
 	if (statusText === 'Merged') return 'Merged'
+	if (statusText === 'Draft') return 'Draft'
 	return null
 }
 
@@ -28,10 +29,12 @@ function getStatusEmoji({
 		if (status === 'Open') return '🟩'
 		if (status === 'Closed') return '🟥'
 		if (status === 'Merged') return '🟪'
+		if (status === 'Draft') return '⬜️'
 	}
 	if (status === 'Open') return '🟢'
 	if (status === 'Closed') return '🔴'
 	if (status === 'Merged') return '🟣'
+	if (status === 'Draft') return '⚪️'
 	return ''
 }
 
